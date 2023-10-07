@@ -11,6 +11,8 @@ public class Hasher {
      *  2. INTEGER k
      */
 
+    // this commit is what I submitted to Amazon
+
     public static int countNumWays(String s, int k) {
         // Write your code here
 
