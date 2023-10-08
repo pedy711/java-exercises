@@ -1,5 +1,7 @@
 package com.exercises.amazon.hackerrank.main;
 
+import java.util.stream.IntStream;
+
 public class Hasher {
 
     /*
@@ -35,6 +37,11 @@ public class Hasher {
             // Extract the substring of length k starting at index i.
             String extractedStr = s.substring(i, i + k);
 
+            // this reduces the runtime drastically from 54 milliseconds to 21 milliseconds
+            // in the test "veryLongString" with a very long string
+            if(containsOnlyOneChar(extractedStr)) {
+                continue;
+            }
             // Reverse the extracted substring.
             String reversedStr = new StringBuilder(extractedStr).reverse().toString();
 
@@ -48,6 +55,13 @@ public class Hasher {
         }
 
         return possibleWaysNo;
+    }
+
+    public static boolean containsOnlyOneChar(String extractedStr) {
+        return IntStream.range(0, extractedStr.length())
+                .map(extractedStr::charAt)
+                .distinct()
+                .count() == 1;
     }
 
 
