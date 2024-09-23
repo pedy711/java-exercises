@@ -1,6 +1,6 @@
 package klarna;
 
-import com.exercises.klarna.challenge1.Smoothie;
+import com.exercises.year2023.klarna.challenge1.Smoothie;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

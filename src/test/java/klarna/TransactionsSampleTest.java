@@ -1,7 +1,7 @@
 package klarna;
 
 
-import com.exercises.klarna.challenge2.Transactions;
+import com.exercises.year2023.klarna.challenge2.Transactions;
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.core.Is.is;
 

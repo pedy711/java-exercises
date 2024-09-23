@@ -1,6 +1,6 @@
 package amazon;
 
-import com.exercises.amazon.hackerrank.main.Hasher;
+import com.exercises.year2023.hackerrank.main.Hasher;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
